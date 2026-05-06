@@ -20,8 +20,11 @@
     @Override
     public void tampilInfo(){
         System.out.println("Elektronik");
-        super.tampilInfo();
-        System.out.println("Masa Expired: " + garansi + " Hari");
+        System.out.println("Nama   : " + getNama());
+        //super.tampilInfo();
+        System.out.println("Merek: " + merek);
+        System.out.println("Garansi : " + garansiTahun + " tahun");
+        System.out.println("-----------");
     }
 
     public void setGaransi(int garansi){
