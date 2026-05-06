@@ -2,10 +2,12 @@
     private String kedaluwarsa;
     private String kategori;
 
-    public Makanan(String nama, double harga, int stok, String kategori, int expired) {
-        super(nama, harga, stok, kategori);
-        this.expired = expired;
+    public Makanan(String nama, double harga, int stok, String kedaluwarsa, String kategori) {
+        super(nama, harga, stok);
+        this.kedaluwarsa = kedaluwarsa;
+        this.kategori = kategori;
     }
+
 
     @Override
     public void tampilInfo() {
