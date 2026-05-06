@@ -32,12 +32,9 @@
     public double hitungDiskon(int jumlahBeli) {
         return hitungTotalHarga(jumlahBeli) * PPN;
     }
-
-    public void setGaransi(int garansi){
-        if(garansi < 1){
-            System.out.println("Masa Expired Tidak Boleh Negatif");
-        }else{
-            this.garansi = garansi;
-        }
+    //Versi 2 - pajak dengan presentase custom
+    public double hitunngDiskon(int jumlahBeli, double persenPajak) {
+        return hitungTotalHarga(jumlahBeli) * (persenPajak / 100); 
     }
+    
 }
