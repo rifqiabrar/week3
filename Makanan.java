@@ -15,11 +15,13 @@
     public String getKategori(){
         return kategori;
     }
+
     @Override
     public void tampilInfo() {
         System.out.println("Makanan");
-        super.tampilInfo();
-        System.out.println("Masa Expired: " + expired + " Hari");
+        System.out.println("Kategori : " + kategori);
+        System.out.println("Kedaluwarsa: " + Kedaluwarsa);
+        System.out.println("--------");
     }
 
     public void setExpired(int expired) {
