@@ -8,7 +8,13 @@
         this.kategori = kategori;
     }
 
+    public String getKedaluwarsa(){
+        return kedaluwarsa;
+    }
 
+    public String getKategori(){
+        return kategori;
+    }
     @Override
     public void tampilInfo() {
         System.out.println("Makanan");
