@@ -36,5 +36,13 @@
     public double hitunngDiskon(int jumlahBeli, double persenPajak) {
         return hitungTotalHarga(jumlahBeli) * (persenPajak / 100); 
     }
-    
+    public double hitugHargaSetelahPajak(int jumlahBeli) {
+        return hitungTotalHarga(jumlahBeli) + hitungPajak(jumlahBeli);
+    }
+
+    @Override
+    public double hitungPajak(double harga) {
+        return harga * 0.20;
+    }
+
 }
