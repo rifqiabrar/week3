@@ -9,6 +9,14 @@
         this.garansiTahun = garansiTahun;
     }
 
+    public String getMarket() {
+        return merek;
+    }
+
+    public int getGaransiTahun() {
+        return garansiTahun;
+    }
+
     @Override
     public void tampilInfo(){
         System.out.println("Elektronik");
