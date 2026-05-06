@@ -27,6 +27,12 @@
         System.out.println("-----------");
     }
 
+    //OVERLOADING hitungPajak
+    //Versi 1 - pajak standar PPN 11%   
+    public double hitungDiskon(int jumlahBeli) {
+        return hitungTotalHarga(jumlahBeli) * PPN;
+    }
+
     public void setGaransi(int garansi){
         if(garansi < 1){
             System.out.println("Masa Expired Tidak Boleh Negatif");
