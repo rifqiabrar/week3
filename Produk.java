@@ -46,6 +46,9 @@ public void beli(int jumlahBeli) {
     }
     stok -= jumlahBeli;
     System.out.println(" Beli " + nama + " x" + jumlahBeli + " = Rp" + hitungTotalHarga(jumlahBeli) + " | Sisa stok: " + stok);
-    
 }
+
+public abstract void tampilInfo();
+
+public abstract double hitungPajak(double harga);
 }
