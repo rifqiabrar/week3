@@ -35,11 +35,17 @@ abstract class Produk {
         return harga * jumlahBeli;
     }
 
-public void tampilInfo(){
-    System.out.println("Produk      : " + nama);
-    System.out.println("Kategori    : " + kategori);
-    System.out.println("Harga       : Rp" + harga);
-    System.out.println("Stok        : " + stok);
-    System.out.println("-------------------");
+public void beli(int jumlahBeli) {
+    if (jumlahBeli <= 0) {
+        System.out.println("Jumlah beli harus lebih dari 0!");
+        return;
+    }
+    if (jumlahBeli > stok) {
+        System.out.println("Stok" + nama + " tidak cukup! Tersisa: " + stok);
+        return;
+    }
+    stok -= jumlahBeli;
+    System.out.println(" Beli " + nama + " x" + jumlahBeli + " = Rp" + hitungTotalHarga(jumlahBeli) + " | Sisa stok: " + stok);
+    
 }
 }
