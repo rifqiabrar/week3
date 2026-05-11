@@ -20,7 +20,7 @@
     public void tampilInfo() {
         System.out.println("Makanan");
         System.out.println("Kategori : " + kategori);
-        System.out.println("Kedaluwarsa: " + Kedaluwarsa);
+        System.out.println("Kedaluwarsa: " + kedaluwarsa);
         System.out.println("--------");
     }
 

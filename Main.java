@@ -6,7 +6,12 @@ public class Main {
         Makanan indomie = new Makanan("Indomie Goreng", 3500, 100, "2026-12-01", "Mie Instan");
         Makanan roti = new Makanan("Roti Tawar", 8000, 50, "2026-04-30", "Roti");
 
-        
+        // --- Overriding - satu nama method untuk semua ------------------------
+        System.out.println("====== DAFTAR PRODUK ======");
+        laptop.tampilInfo(); // versi Elektronik
+        hp.tampilInfo(); // versi Elektronik
+        indomie.tampilInfo(); // versi Makanan
+        roti.tampilInfo(); // versi Makanan
         
 
 
