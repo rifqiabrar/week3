@@ -32,28 +32,18 @@
         return 0;
     }
 
-    public void setExpired(int expired) {
-        if (expired < 0) {
-            System.out.println("Masa Expired Tidak Boleh Negatif");
-        } else {
-            this.expired = expired;
-        }
+    // Versi 2 - diskon dengan persentase custom
+    public double hitungDiskon(int jumlahBeli, double persenDiskon) {
+        return hitungTotalHarga(jumlahBeli) * (persenDiskon / 100);
     }
 
-    public void setExpired(int expired, String type) {
-        if (type.equals("Nasi")) {
-            if (expired > 4) {
-                System.out.println("Masa Expired Tidak Boleh Negatif");
-            } else {
-                this.expired = expired;
-            }
-        } else {
-            if (expired < 2) {
-                System.out.println("Masa Expired Tidak Boleh Negatif");
-            } else {
-                this.expired = expired;
-            }
-        }
+    public double hitungHargaSetelahDiskon(int jumlahBeli) {
+        return hitungTotalHarga(jumlahBeli) - hitungDiskon(jumlahBeli);
+    }
+
+    @Override
+    public double hitungPajak(double harga) {
+        return harga * 0.10;
     }
 
 }
