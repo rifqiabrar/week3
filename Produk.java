@@ -31,6 +31,10 @@ abstract class Produk {
         this.stok = stok;
     }
 
+    public double hitungTotalHarga(int jumlahBeli) {
+        return harga * jumlahBeli;
+    }
+
 public void tampilInfo(){
     System.out.println("Produk      : " + nama);
     System.out.println("Kategori    : " + kategori);
